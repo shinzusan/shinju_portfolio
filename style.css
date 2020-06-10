@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  line-height: 1.8;
 }
 
 * {
@@ -74,7 +75,7 @@ h2 {
 .about {
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 450px;
+  height: 500px;
 }
 
 .about__ttl {
@@ -108,23 +109,31 @@ h2 {
 }
 
 .strength {
-  height: 450px;
+  height: 350px;
   margin-bottom: 100px;
 }
 
 .strength_wrap {
   display: flex;
   justify-content: center;
-
 }
 
 .strength_item {
   width: 250px;
   text-align: center;
+  margin: 0 30px;
 }
 
 .strength_item h3 {
   margin: 20px 0 10px 0;
+}
+
+.strength_item-line1 h3 {
+  margin-top: 10px;
+}
+
+.strength_wrap .line1 {
+  margin-top: 10px;
 }
 
 .strength h4 {
@@ -158,12 +167,12 @@ h2 {
 
 .skill__item {
   display: flex;
-  width: 40%;
+  width: 45%;
   margin: 20px;
 }
 
 .skill__item img {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .skill__item h3{
@@ -187,18 +196,29 @@ h2 {
   background: black;
   opacity: 0.9;
 }
+.site_about {
+  margin-left: 50px;
+}
+.site_about p {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
 
 
 .site_wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 
 .site_wrap-item-img {
   height: 250px;
   width: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.site_wrap-item-img a:hover {
+  opacity: 0.8;
 }
 
 .site_wrap-item-img img {
@@ -206,6 +226,44 @@ h2 {
 	height: 250px;
 	object-fit: scale-down;
 }
+
+.site_wrap-item-text p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*  架空サイト */
+.ficsite_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ficsite_about h3  {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+
+.ficsite_wrap-item-img {
+  height: 250px;
+  width: 350px;
+  /* border: 1px solid black; */
+}
+.ficsite_wrap-item-img a:hover {
+  opacity: 0.8;
+}
+
+.ficsite_wrap-item-img img {
+  width:350px;
+	height: 250px;
+	object-fit: scale-down;
+}
+
+.ficsite_wrap-item-text p {
+  text-align: center;
+  margin-top: 20px;
+}
+/* kokomade */
 
 .content{
 	margin: 0 auto;
@@ -265,44 +323,47 @@ h2 {
  color: black;
 }
 
-#modal02 .modal__content{
+#modal03 .modal__content{
 	background: #fff;
 	left: 50%;
 	padding: 35px 40px 0 40px ;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 50%;
+	width: 55%;
 	border-radius: 4px;
-	position: relative;
+  position: relative;
+  line-height: 1.6;
 }
 
-#modal02 .modal__content_img {
+#modal03 .modal__content_img {
   margin: 0 120px;
 }
 
 
-#modal02 .modal__content_about {
+#modal03 .modal__content_about {
 	margin: 0 120px;
  padding-left: 15px;
 }
 
 .repro_wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-
-.repro_wrap-item-img {
-  height: 250px;
-  width: 350px;
-}
 
 .repro_wrap-item-img img {
- 
+  height: 250px;
+  width: 350px;
+  object-fit: scale-down;
 }
 
-#modal03 .modal__content{
+.repro p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#modal02 .modal__content{
 	background: #fff;
 	left: 50%;
 	padding: 40px;
@@ -315,7 +376,12 @@ h2 {
 	display: flex;
 }
 
-#modal03 .modal__content_about {
+#modal02 .modal__content_about {
   margin: 0 20px;
   padding-left: 15px;
  }
+
+
+.sns img {
+  margin: 10px;
+}

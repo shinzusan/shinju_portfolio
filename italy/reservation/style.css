@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  padding: 5px;
+  width: 300px;
+}
+
+textarea {
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+}
+
+select {
+  padding: 5px;
+  width: 310px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background: black;
+  padding: 12px 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header a {
+color: #ffffff;
+display: block;
+border-bottom: 1px solid black;
+}
+
+.header a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.header_logo {
+  display: flex;
+}
+.header_logo p {
+  margin: 10px 0 5px 20px;
+  font-size: 25px;
+}
+
+.forms {
+  display: flex;
+}
+
+
+.form {
+  margin:  100px;
+
+}
+
+.label {
+  font-weight: bold;
+}
+
+
+
+.name {
+  margin-bottom: 30px;
+}
+
+.name .label {
+  margin-right: 170px;
+}
+
+input:focus {
+  border: 2px solid black; 
+  z-index: 10;
+  outline: 0;
+}
+.add .label {
+  margin-right: 105px;
+}
+
+.add {
+  margin-bottom: 30px;
+}
+
+.namber .label {
+  margin-right: 152px;
+}
+
+.namber {
+  margin-bottom: 30px;
+}
+.menu .label {
+  margin-right: 105px;
+}
+
+.menu {
+  margin-bottom: 30px;
+}
+.text .label {
+  margin-right: 153px;
+}
+
+.btn-area input {
+  width: 100px;
+  color: #ffffff;
+  background: black;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+.btn-area {
+  display: block;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background: black;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+.footer small {
+ color: #ffffff;
+ text-align: center;
+ display: block;
+}
+
+.sns ul {
+  display: flex;
+  justify-content: center;
+}
