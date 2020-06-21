@@ -1,0 +1,49 @@
+@media screen and (max-width: 1020px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  .strength {
+    padding-top: 150px;
+  }
+
+  .about__img {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about__body{
+    margin: 0 auto;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  .header {
+    flex-direction: column;
+  }
+
+  .header__list {
+     display: none;
+  }
+   .about_wrap {
+     flex-direction: column;
+   }
+
+   .strength {
+     padding-top: 150px;
+   }
+
+   .about__body {
+     margin: 0 auto;
+   }
+   .site_wrap-item {
+     margin: 0 auto;
+   }
+   .ficsite_wrap-item {
+     margin: 0 auto;
+   }
+   .repro_wrap-item {
+     margin: 0 auto;
+   }
+
+   .about_wrap {
+     margin: 0 auto;
+   }
+  }
