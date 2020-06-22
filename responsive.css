@@ -14,7 +14,7 @@
 
 
 
-@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+@media screen and (max-width: 776px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
   .header {
     flex-direction: column;
   }
@@ -47,3 +47,63 @@
      margin: 0 auto;
    }
   }
+
+  @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    body {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .header__mv h1 {
+      font-size: 35px;
+    }
+
+    .about__wrap {
+      grid-template-columns: 1fr;
+    }
+
+    .about__bimg {
+      width: auto;
+    }
+    .about__body {
+      width: auto;
+    }
+
+
+    .strength {
+      padding-top: 300px;
+    }
+
+    .strength_wrap {
+      grid-template-columns: 1fr;
+    }
+    
+    .skill__wrap {
+      grid-template-columns: 1fr;
+    }
+    .site_wrap {
+      grid-template-columns: 1fr;
+    }
+
+    .site_wrap-item-img img {
+      width: 300px;
+    }
+
+    .site_wrap-item .item3 img {
+      display: none;
+    }
+
+
+    .ficsite_wrap {
+      grid-template-columns: 1fr;
+    }
+  .ficsite_wrap-item-img img {
+    width: auto;
+  }
+
+    .repro_wrap {
+      grid-template-columns: 1fr;
+    }
+
+  }
+  
