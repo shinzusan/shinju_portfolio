@@ -27,7 +27,7 @@
    }
 
    .strength {
-     padding-top: 150px;
+     padding-top: 200px;
    }
 
    .about__body {
@@ -49,9 +49,17 @@
   }
 
   @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+     html {
+       margin: 0 auto;
+     }
+  
     body {
-      max-width: 100%;
+      width: 100%;
       height: auto;
+    }
+
+    .container {
+      margin: 5px;
     }
 
     .header__mv h1 {
@@ -62,16 +70,15 @@
       grid-template-columns: 1fr;
     }
 
-    .about__bimg {
-      width: auto;
-    }
+    
     .about__body {
       width: auto;
+      padding: 0 35px;
     }
 
 
     .strength {
-      padding-top: 300px;
+      padding-top: 350px;
     }
 
     .strength_wrap {
@@ -85,8 +92,8 @@
       grid-template-columns: 1fr;
     }
 
-    .site_wrap-item-img img {
-      width: 300px;
+    .site_about {
+      margin: 0 50px;
     }
 
     .site_wrap-item .item3 img {
@@ -97,8 +104,9 @@
     .ficsite_wrap {
       grid-template-columns: 1fr;
     }
-  .ficsite_wrap-item-img img {
+  .ficsite_wrap-item-img {
     width: auto;
+    padding-right: 10px;
   }
 
     .repro_wrap {
