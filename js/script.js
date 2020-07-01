@@ -13,5 +13,9 @@ $(function(){
       $('.js-modal').fadeOut();
       return false;
   }); 
+
+  $('#nav-content li a').on('click', function(event) {
+    $('#menu').prop('checked', false);
+  });
 });
 

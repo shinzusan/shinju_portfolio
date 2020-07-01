@@ -65,6 +65,7 @@ h2 {
   justify-content: space-evenly; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin: 0 50px;
 }
 
 .header__list a {
@@ -72,6 +73,24 @@ h2 {
   font-weight: 500;
   color: #ffffff;
 }
+
+
+.open,
+.close {
+  display: none;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
+}
+
+.aside_list a {
+  color: black;
+  font-weight: 500;
+}
+
+
 
 .about {
   margin-top: 50px;
@@ -219,7 +238,7 @@ h2 {
   margin-bottom: 100px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  margin: 0 15px 100px;
+  margin: 0 15px  100px 15px;
 }
 
 
@@ -235,14 +254,17 @@ h2 {
 .site_wrap-item-img img {
   width:350px;
 	height: 250px;
-	object-fit: scale-down;
+  object-fit: contain;
 }
 
 .site_wrap-item-text p {
   margin: auto;
-  margin-top: 20px;
+  padding: 20px 100px;
 }
-
+.item4 p {
+  margin: auto;
+  padding: 20px 70px;
+}
 /*  架空サイト */
 .ficsite_wrap {
   /* display: flex;
@@ -305,7 +327,7 @@ h2 {
 	width: 60%;
 	border-radius: 4px;
 	position: relative;
-	display: flex;
+  display: flex;
 }
 
 #modal01 .modal__content_about {
@@ -336,26 +358,74 @@ h2 {
  color: black;
 }
 
-#modal03 .modal__content{
+#modal02 .modal__content{
 	background: #fff;
 	left: 50%;
-	padding: 35px 40px 0 40px ;
+	padding: 40px;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 55%;
+	width: 60%;
 	border-radius: 4px;
+	position: relative;
+  display: flex;
+}
+
+#modal02 .modal__content_about {
+ margin: 0 20px;
+ padding-left: 15px;
+}
+
+/* #modal02 .modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  border-radius: 4px;
   position: relative;
-  line-height: 1.6;
+  display: flex;
 }
 
-#modal03 .modal__content_img {
-  margin: 0 120px;
-}
+#modal02 .modal__content_about {
+  margin: 0 20px;
+  padding-left: 15px;
+ } */
 
+#modal03 .modal__content{
+	background: #fff;
+	left: 50%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	border-radius: 4px;
+	position: relative;
+  display: flex;
+}
 
 #modal03 .modal__content_about {
-	margin: 0 120px;
+ margin: 0 20px;
+ padding-left: 15px;
+}
+#modal04 .modal__content{
+	background: #fff;
+	left: 50%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	border-radius: 4px;
+	position: relative;
+  display: flex;
+}
+
+#modal04 .modal__content_about {
+ margin: 0 20px;
  padding-left: 15px;
 }
 
@@ -378,28 +448,13 @@ h2 {
   text-align: center;
 }
 
-#modal02 .modal__content{
-	background: #fff;
-	left: 50%;
-	padding: 40px;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	width: 60%;
-	border-radius: 4px;
-	position: relative;
-	display: flex;
-}
-
-#modal02 .modal__content_about {
-  margin: 0 20px;
-  padding-left: 15px;
- }
 
 
 .sns img {
   margin: 10px;
 }
+
+
 
 
 

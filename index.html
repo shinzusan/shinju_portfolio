@@ -13,6 +13,27 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+
+  <input class="nav-input" id="menu" type="checkbox" />
+  <label for="menu" class="open"><i class="fas fa-bars"></i></label>
+  <label for="menu" class="back"></label>
+  <aside class="aside">
+    <!--🍔-->
+    <label for="menu" class="close" >×</label>
+    <nav id="nav-content">
+        <ul class="aside_list">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a  href="#strength">私の強み</a></li>
+          <li><a  href="#strength">私の強み</a></li>
+          <li><a href="#site">架空サイト</a></li>
+          <li><a href="#repro">模写サイト</a></li>
+          <li><a href="#contact">お問合せ</a></li>
+        </ul>
+    </nav>
+
+  </aside>
+
 <header class="header">
   <div class="header__mv">
     <h1 >My<br>portforio</h1>
@@ -22,16 +43,18 @@
     <ul>
       <li class="header__list-item"><a href="#about">about</a></li>
       <li class="header__list-item"><a href="#skill">skill</a></li>
-      <li class="header__list-item"><a href="">実績</a></li>
+      <li class="header__list-item"><a href="#strength">私の強み</a></li>
       <li class="header__list-item"><a href="#site">架空サイト・バナー</a></li>
       <li class="header__list-item"><a href="#repro">模写サイト</a></li>
-      <li class="header__list-item"><a href="#contact">お問い合わせ</a></li>
+      <li class="header__list-item"><a href="#contact">お問合わせ</a></li>
     </ul>
   </div>
   </nav>
 </header>
 
-<section id="#about" class="about">
+
+
+<section id="about" class="about">
   <div class="container">
   <h2 class="about__ttl">私について</h2>
   <div class="about__wrap">
@@ -41,18 +64,18 @@
   <div class="about__body">
     <h3>徳永　真珠（しんじゅ）　23歳</h3>
     <p>年齢　23歳</p>
-    <p>前職では、1年間不動産の営業として仕事をしておりました。<br>体調不良をきっかけに退職をしましたが、以前からの目標である「自立した女性になる」ことを叶えるために独学にて、4月からWebデザイナーの勉強をしております。<br>未経験からの転職ですが、前職の営業職で培った力も活かしていきたいと思っております。<br>
-  将来的には、ユーザー目線に立って企画をし、マーケティングもできるようなフリーランスWebデザイナーになりたいと考えています。そのためにも、まずは企業で自分の市場価値を高めていきたいと考えております。
+    <p>前職では、1年間不動産の営業として仕事をしておりました。<br>身体の不調をきっかけに退職をしましたが、以前からの目標である「自立した女性になる」ことを叶えるために独学にて、4月からWebデザイナーの勉強をしております。<br>未経験からの転職ですが、前職の営業職で培った力も活かしていきたいと思っております。<br>
+  将来的には、ユーザー目線に立って企画をし、マーケティングもできるようなWebデザイナーになりたいと考えています。
     </p>
     <h4>趣味特技 ドラム・ボーリング</h4>
-    <small>ドラムは中学2年生から10年間続けております。</small>
+    <small>ドラムは中学2年生から10年間続けております。高校生では、バンドにて県外進出をしております。</small>
   </div>
 </div>
 </div>
 </section>
 
 
-<section class="strength">
+<section id="strength" class="strength">
   <div class="container">
     <h2>私の強み</h2>
     <div class="strength_wrap">
@@ -168,26 +191,35 @@
       
       <div class="site_wrap-item item1">
         <div class="site_wrap-item-img">
-        <a class="js-modal-open" href="" data-target="modal01"><img src="img/piratis.jpg" alt=""></a>
+        <a class="js-modal-open" href="" data-target="modal01"><img src="img/chocolate.jpg" alt=""></a>
+
+        </div>
+        <div class="site_wrap-item-text">
+          <p>冬限定チョコレート</p>
+        </div>
+      </div>
+      <div class="site_wrap-item item2">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal02"><img src="img/piratis2.jpg" alt=""></a>
         </div>
         <div class="site_wrap-item-text">
           <p>オンラインピラティス</p>
         </div>
       </div>
-      <div class="site_wrap-item item2">
-        <div class="site_wrap-item-img">
-        <a class="js-modal-open" href="" data-target="modal02"><img src="img/vegitable.png" alt=""></a>
-        </div>
-        <div class="site_wrap-item-text">
-          <p>野菜オンラインショッピングサイト</p>
-        </div>
-      </div>
       <div class="site_wrap-item item3">
         <div class="site_wrap-item-img">
-        <a class="js-modal-open" href="" data-target="modal03"><img src="img/cosme.jpg" alt=""></a>
+        <a class="js-modal-open" href="" data-target="modal03"><img src="img/vegitable3.jpg" alt=""></a>
         </div>
         <div class="site_wrap-item-text">
-          <p>タイプ別メイク特集</p>
+          <p>オンライン野菜サイト</p>
+        </div>
+      </div>
+      <div class="site_wrap-item item4">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal04"><img src="img/summer-sale.jpg" alt=""></a>
+        </div>
+        <div class="site_wrap-item-text">
+          <p>ショッピングモール夏セール</p>
         </div>
       </div>
     </div>
@@ -228,19 +260,20 @@
   <div class="modal__bg js-modal-close"></div>
   <div class="modal__content">
     <div class="modal__content_img">
-    <img src="img/piratis_big.jpg" alt="">
+    <img src="img/chocolate.jpg" alt="">
   </div>
   <div class="modal__content_about">
     <h1 class="modal__content_text">デザインのポイント</h1>
       <ul>
-        <li>クリック数を上げるために、「初回0円」を一番に強調している。</li>
-        <li>通常の料金をあえて表示する事で、安さを強調している。</li>
+        <li>高級感かつ冬らしさを出すため、深い青色を使用。</li>
+        <li>視覚の導線を意識し、下に期間限定キャンペーンを配置。
+        </li>
       </ul>
       <h1 class="modal__content_text2">バナーの概要</h1>
       <ul>
-        <li>オンラインピラティスのバナー</li>
-        <li>ターゲット　20～50代の女性</li>
-        <li>新規事業立ち上げにより、利用者を集客するためにオープン価格1,000円という安い値段設定にしている。</li>
+        <li>こばやす（@kobayas_s）さんのバナーお題にて作成 <a href="https://note.com/kobayas/n/n7454d1ec9b95">こばやすさんのnote</a></li>
+        <li>冬限定チョコレート特別価格のバナー</li>
+        <li>ターゲット　20～40代の働く男女</li>
       </ul>
     </div>
       <a class="js-modal-close fas fa-times" href=""></a>
@@ -250,20 +283,20 @@
   <div class="modal__bg js-modal-close"></div>
   <div class="modal__content">
     <div class="modal__content_img">
-    <img src="img/cosme.jpg" alt=""height="210" width="450">
+    <img src="img/vegitable3.jpg" alt="">
   </div>
   <div class="modal__content_about">
     <h1 class="modal__content_text">デザインのポイント</h1>
       <ul>
-        <li>イエローベース、ブルーベース別のメイク特集のため、背景を黄色と青で印象付けをしている。</li>
-        <li>イラストの女性も黄色と青で統一。</li>
-        <li>「自分映え」を強調したいため、色を変更して目立たせている。</li>
+        <li>背景を野菜にする事で、一瞬見るだけで何のバナーかを判断できるようにしている。</li>
+        <li>売りにしたい部分を右上に独立させる事で、目線が行きやすくしている。</li>
+        <li>下にかつ大きな表示で値段を見せ、クリックさせやすくしている。</li>
       </ul>
       <h1 class="modal__content_text2">バナーデザインのポイント</h1>
       <ul>
-        <li>コスメ通販サイトのタイプ別メイク特集の広告</li>
-        <li>ターゲット　20～30代の女性</li>
-        <li>記事に掲載されているコスメを買ってもらうことが狙い。</li>
+        <li>オンライン野菜配達サイトのバナー</li>
+        <li>ターゲット　20～40代の子育て中の夫婦</li>
+        <li>初回の利用者を増やすために作成</li>
       </ul>
     </div>
       <a class="js-modal-close fas fa-times" href=""></a>
@@ -273,21 +306,40 @@
   <div class="modal__bg js-modal-close"></div>
   <div class="modal__content">
     <div class="modal__content_img">
-    <img src="img/vegitable_big.png" >
+    <img src="img/piratis2.jpg" >
   </div>
   <div class="modal__content_about">
     <h1 class="modal__content_text">デザインのポイント</h1>
       <ul>
-        <li>背景を野菜にする事で、一瞬見るだけで何のバナーかを判断できるようにしている。</li>
-        <li>売りにしたい部分を右上に独立させる事で、目線が行きやすくしている。</li>
-        <li>下にかつ大きな表示で値段を見せ、クリックさせやすくしている。
+        <li>元々の数字を出す事で今の値段の安さを強調。</li>
+        <li>フォントを明朝体にする事で女性らしさを表現。</li>
+      </ul>
+      <h1 class="modal__content_text2">バナーの概要</h1>
+      <ul>
+        <li>ターゲット　20～50代のピラティスに興味のあるピラティス未経験の女性</li>
+        <li>新規顧客獲得のためにバナー作成</li>
+      </ul>
+    </div>
+      <a class="js-modal-close fas fa-times" href=""></a>
+  </div><!--modal__inner-->
+</div><!--modal-->
+<div id="modal04" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    <div class="modal__content_img">
+    <img src="img/summer-sale.jpg" >
+  </div>
+  <div class="modal__content_about">
+    <h1 class="modal__content_text">デザインのポイント</h1>
+      <ul>
+        <li>背景をプールの水面する事で夏らしさを出している。</li>
+        <li>黄色の文字で夏の日光、エネルギッシュを表現。
         </li>
       </ul>
       <h1 class="modal__content_text2">バナーの概要</h1>
       <ul>
-        <li>オンライン野菜ショップのバナー</li>
-        <li>ターゲット　20～60代の新鮮な野菜を求めている方</li>
-        <li>初回の利用者を増やすために作成</li>
+        <li>ターゲット　10代～20代の女性</li>
+        <li>ヤング向けショッピングモールのセールバナー</li>
       </ul>
     </div>
       <a class="js-modal-close fas fa-times" href=""></a>

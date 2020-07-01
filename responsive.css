@@ -1,4 +1,12 @@
-@media screen and (max-width: 1020px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+@media screen and (min-width:776px) and (max-width:2000px) {
+  .aside {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+
   .strength {
     padding-top: 150px;
   }
@@ -14,6 +22,7 @@
 
 
 
+
 @media screen and (max-width: 776px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
   .header {
     flex-direction: column;
@@ -22,6 +31,59 @@
   .header__list {
      display: none;
   }
+
+  .aside_logo {
+    font-size: 30px;
+    margin: 0 15px;
+  }
+
+  .aside_list {
+    font-size: 20px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .aside_list li {
+    margin-top: 10px;
+  }
+
+  /* hannba-ga- */
+  .open,
+.close {
+  display: block;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.open {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.aside {
+  width: 250px;
+  position: absolute;
+  left: -250px;
+  height: 100%;
+  transition: all 0.2s;
+  background: #ffffff;
+  z-index: 100;
+  top: 0;
+}
+
+input[type="checkbox"]:checked ~ .aside {
+  left: 0;
+}
+
+input[type="checkbox"]:checked ~ .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) ;
+  z-index: 50;
+}
+
+
    .about_wrap {
      flex-direction: column;
    }
@@ -31,6 +93,7 @@
    }
 
    .about__body {
+     width: auto;
      margin: 0 auto;
    }
    .site_wrap-item {
@@ -46,6 +109,34 @@
    .about_wrap {
      margin: 0 auto;
    }
+  
+   #modal01 .modal__content {
+     display: block;
+     padding: 20px;
+   }
+
+   #modal02 .modal__content {
+    display: block;
+    padding: 20px;
+   }
+
+
+.modal__content img {
+    width: auto;
+  }
+
+  .modal__content_about li {
+    font-size: 10px;
+    padding-bottom: 8px;
+    list-style: square;
+  }
+  .modal__content_text {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .modal__content_text2 {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
@@ -59,7 +150,7 @@
     }
 
     .container {
-      margin: 5px;
+      margin: 0px;
     }
 
     .header__mv h1 {
@@ -88,8 +179,23 @@
     .skill__wrap {
       grid-template-columns: 1fr;
     }
+    .modal__content img {
+      display: none;
+    }
+
+
     .site_wrap {
       grid-template-columns: 1fr;
+    }
+
+    .ficsite_wrap-item-img {
+      width: auto;
+      height: auto;
+      object-fit: none;
+      width: max-content;
+      height: max-content;
+      grid-area: item;
+  
     }
 
     .site_about {
