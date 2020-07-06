@@ -3,231 +3,395 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>徳島ファーム</title>
+  <title>shinju portoforio</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-</head>
-<body>
+  <link rel="stylesheet" href="responsive.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+  <!-- jsファイル -->
   <script src="js/script.js"></script>
 </head>
 <body>
 
-
-  <!-- <input id="menu" type="checkbox" />
+  <input class="nav-input" id="menu" type="checkbox" />
   <label for="menu" class="open"><i class="fas fa-bars"></i></label>
   <label for="menu" class="back"></label>
-  <aside class="aside"> -->
+  <aside class="aside">
     <!--🍔-->
-    <!-- <label for="menu" class="close">×</label>
-    <nav class="modalheader__list">
-      <ul>
-        <li><a href="">TOP</a></li>
-        <li><a href="kodawari/kodawari.html">こだわり</a></li>
-        <li><a href="online/online.html">オンライン発送</a></li>
-        <li><a href="move/move.html">移動販売</a></li>
-        <li><a href="info/reservation.html">お問合せ</a></li>
-      </ul>
-    </nav>
-  </aside> -->
-
-  <header class="header">
-    <div class="header__wrap">
-      <div class="header__logo"><img src="img/logo.png" alt=""width="200px"></div>
-      <nav class="header__list">
-        <ul>
-          <li><a href="">TOP</a></li>
-          <li><a href="kodawari/kodawari.html">こだわり</a></li>
-          <li><a href="online/online.html">オンライン発送</a></li>
-          <li><a href="move/move.html">移動販売</a></li>
-          <li><a href="info/reservation.html">お問合せ</a></li>
+    <label for="menu" class="close" >×</label>
+    <nav id="nav-content">
+        <ul class="aside_list">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a  href="#strength">私の強み</a></li>
+          <li><a href="#site">架空サイト</a></li>
+          <li><a href="#repro">模写サイト</a></li>
+          <li><a href="#contact">お問合せ</a></li>
         </ul>
-      </nav>
+    </nav>
+
+  </aside>
+
+<header class="header">
+  <div class="header__mv">
+    <h1 >My<br>portforio</h1>
+  </div>
+  <nav class="header__list">
+    <div class="container">
+    <ul>
+      <li class="header__list-item"><a href="#about">about</a></li>
+      <li class="header__list-item"><a href="#skill">skill</a></li>
+      <li class="header__list-item"><a href="#strength">私の強み</a></li>
+      <li class="header__list-item"><a href="#site">架空サイト・バナー</a></li>
+      <li class="header__list-item"><a href="#repro">模写サイト</a></li>
+      <li class="header__list-item"><a href="#contact">お問合わせ</a></li>
+    </ul>
+  </div>
+  </nav>
+</header>
+
+
+
+<section id="about" class="about">
+  <div class="container">
+  <h2 class="about__ttl">私について</h2>
+  <div class="about__wrap">
+  <div class="about__img">
+    <img src="img/about2.jpg" alt="">
+  </div>
+  <div class="about__body">
+    <h3>徳永　真珠（しんじゅ）　23歳</h3>
+    <p>年齢　23歳</p>
+    <p>前職では、1年間不動産の営業として仕事をしておりました。<br>身体の不調をきっかけに退職をしましたが、以前からの目標である「自立した女性になる」ことを叶えるために独学にて、4月からWebデザイナーの勉強をしております。<br>未経験からの転職ですが、前職の営業職で培った力も活かしていきたいと思っております。<br>
+  将来的には、ユーザー目線に立って企画をし、マーケティングもできるようなWebデザイナーになりたいと考えています。
+    </p>
+    <h4>趣味特技 ドラム・ボーリング</h4>
+    <small>ドラムは中学2年生から10年間続けております。高校生では、バンドにて県外進出をしております。</small>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section id="strength" class="strength">
+  <div class="container">
+    <h2>私の強み</h2>
+    <div class="strength_wrap">
+      <div class="strength_item item1">
+       <img src="img/パソコン.jpg" alt="" height="80px" width="100px">
+       <h3 class="line1">情報収集力</h3>
+       <p>インターネットや紙媒体等様々な角度から<br>情報を収集する力がございます。</p>
+      </div>
+      <div class="strength_item item2">
+        <i class="far fa-handshake fa-5x"></i>
+       <h3 class="line2">リレーション構築</h3>
+       <p>信頼関係を築き、相手の要望をより早く察知する事ができます。</p>
+      </div>
+      <div class="strength_item item3">
+        <i class="fas fa-search fa-5x"></i>
+        <h3 class="line3">調査力</h3>
+        <p>市場調査から、競合の様子、利用者目線に立って<br>物事を考える力がございます。</p>
+       </div>
     </div>
-    <div class="slide_bar">
-      <div class="header__mv">
-  <img src="img/vege_mv.jpg" alt=""width="100%" height="768px">
-  <img src="img/satumaimo.jpg" alt=""width="100%" height="768px">
-  <img src=img/child2.jpg alt="" width="100%" height="768px">
+  </div>
+</section>
+
+
+<section id="skill" class="skill">
+  <div class="container">
+    <h2>スキル</h2>
+  <div class="skill__wrap">
+    <div class="skill__item item1">
+        <div class="skill__img">
+          <img src="img/Ai06.jpg" alt="">
+        </div>
+        <div class="skill__txt">
+      <h3>illustrator</h3>
+      <p>★★★★☆</p>
+      <p>主にillustratorを用いてバナー作成を行っております。<br>一番使い慣れているソフトです。</p>
+    </div>
+    </div>
+    <div class="skill__item item2">
+      <div class="skill__img">
+        <img src="img/Ps06.jpg" alt="">
+      </div>
+      <div class="skill__txt">
+      <h3>Photoshop</h3>
+      <p>★★★★☆</p>
+      <p>主に写真の加工や写真を主に使用するバナー作成でPhotoshopを使っております。</p>
+    </div>
+    </div>
+    <div class="skill__item item3">
+      <img src="img/html06.jpg" alt="" height="60px">
+      <div class="skill__txt">
+      <h3>HTML</h3>
+      <p>★★★★☆</p>
+      <p>基本的なコーディングが可能です。使用エディタは、VS codeです。</p>
       </div>
     </div>
-<div class="header__title">
-  <h1>選りすぐりの新鮮野菜を<br>あなたにお届け</h1>
+    <div class="skill__item item4">
+      <div class="skill__img">
+       <img src="img/css06.jpg" alt="">
+      </div>
+      <div class="skill__txt">
+      <h3>CSS</h3>
+      <p>★★★☆☆</p>
+      <p>基礎的な装飾が可能です。まだまだ知識の蓄積が足りていないため、他の勉強よりも多くの時間を割いて勉強しております。
+      </p>
+      </div>
+    </div>
+    <div class="skill__item item5">
+      <div class="skill__img">
+       <img src="img/js06.jpg" alt="">
+      </div>
+      <div class="skill__txt">
+      <h3>JavaScript</h3>
+      <p>★★☆☆☆</p>
+      <p>只今勉強中です。初級の実装でしたら、可能です。</p>
+      </div>
+    </div>
+    <div class="skill__item item6">
+      <div class="skill__img">
+      <img src="img/w06.jpg" alt="">
+      </div>
+      <div class="skill__txt">
+      <h3>WordPress</h3>
+      <p>★★☆☆☆</p>
+      <p>WordPressにてブログを更新しております。<br>こちらも見ていただければと存じます。</p>
+      </div>
+    </div>
+    <div class="skill__item item7">
+      <div class="skill__img">
+       <img src="img/jq06.jpg" alt="">
+      </div>
+      <div class="skill__txt">
+      <h3>jQuery</h3>
+      <p>★☆☆☆☆</p>
+      <p>JavaScriptと同様、只今勉強しております。</p>
+      </div>
+    </div>
+    <div class="skill__item item8"></div>
+  </div>
 </div>
-<div class="header__online">
-  <a href="online/online.html"><img src="img/online.png" alt="" height="150px" width="150px"></a>
-</div>
-  </header>
 
-  
+</section>
 
 
-  <section class="title">
-<h2>地域に愛され続ける新鮮野菜をお届け</h2>
-<p>創業から120年、学校給食や企業で地元の人に愛され続けた無農薬、有機野菜をあなたの元へお届けいたします。<br>
-  無農薬だから健康に気遣っている方、お子様への離乳食にもお使いいただける野菜を取り揃えております。<br>
-  また、県内のみとなってしまいますが、ご高齢の方が多い地域、近くにスーパーがない地域に移動販売を行っておりますので<br>
-  ご要望等ございましたらお気軽にお問合せください。
-  </p>
-  </section>
+<section id="site" class="site">
+  <div class="container">
+    <h2>架空サイト・バナー</h2>
+    <div class="site_about">
+      <h3> 自作バナー</h3>
+      <p>バナーをクリックして頂きますと、バナーの概要が出てきます。
+      </p>
+    </div>
+    <div class="site_wrap">
+      
+      <div class="site_wrap-item siteitem1">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal01"><img src="img/summer-sale.jpg" alt="" height="250px"  ></a>
 
+        </div>
+        <div class="site_wrap-item-text">
+          <p>ショッピングモールの<br>サマーセールのバナー</p>
+        </div>
+      </div>
+      <div class="site_wrap-item siteitem2">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal02"><img src="img/piratis2.jpg" alt=""></a>
+        </div>
+        <div class="site_wrap-item-text">
+          <p>オンラインピラティス</p>
+        </div>
+      </div>
+      <div class="site_wrap-item siteitem3">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal03"><img src="img/vegitable.jpg" alt=""></a>
+        </div>
+        <div class="site_wrap-item-text">
+          <p>オンライン野菜サイト</p>
+        </div>
+      </div>
+      <div class="site_wrap-item siteitem4">
+        <div class="site_wrap-item-img">
+        <a class="js-modal-open" href="" data-target="modal04"><img src="img/chocolate.jpg" alt=""></a>
+        </div>
+        <div class="site_wrap-item-text">
+          <p>冬限定チョコレート</p>
+        </div>
+      </div>
+    </div>
+       <!-- <div class="container"> -->
+          <div class="ficsite_about">
+          <h3>架空サイト</h3>
+          <div class="ficsite_wrap">
+           <div class="ficsite_wrap-item item1">
+            <div class="ficsite_wrap-item-img">
+              <a class="" href="tokusimafarm/index.html" target="_blank"><img src="img/tokusimafa-mu.jpg" alt=""></a>
+            </div>
+            <div class="site_wrap-item-text">
+              <p>徳島県農家のサイト</p>
+            </div><!--text-->
+           </div><!--item-->
+                            <div class="ficsite_wrap-item item1">
+                             <div class="ficsite_wrap-item-img">
+                              <a class="" href="italy/index.html" target="_blank"><img src="img/italy.jpg"></a>
+                              </div>
+                                 <div class="site_wrap-item-text">
+                                    <p>高級イタリアンレストランサイト</p>
+                                 </div><!--text-->
+                            </div><!--item-->
+             <div class="ficsite_wrap-item item1">
+              <div class="ficsite_wrap-item-img">
+               <a class="" href="" ></a>
+               </div>
+                  <div class="site_wrap-item-text">
+                     <p></p>
+                  </div><!--text-->
+             </div><!--item-->
+          </div><!--wrap-->
+          </div><!--about-->
+        </div><!--container-->
+</section>
 
-  <section class="service">
-    <h2>サービス</h2>
-    <div class="service__wrap">
-
-      <ul class="service__items">
-        <li class="service__item item1">
-          <div class="kodawari__img">
-            <img src="img/kodawari1.jpg" alt="">
-          </div>
-          <div class="kodawari__text">
-            <h3>こだわり</h3>
-            <p>創業当時から変わらぬ無農薬を徹底して作っております。 <br>無農薬のために身体に良く、健康に気を付けている方や <br>お子様に安心して食べて頂けます。</p>
-            <a href="kodawari/kodawari.html">こだわりをもっと見る</a>
-          </div>
+<div id="modal01" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    <div class="modal__content_img">
+    <img src="img/summer-sale.jpg" alt="">
+  </div>
+  <div class="modal__content_about">
+    <h1 class="modal__content_text">デザインのポイント</h1>
+      <ul>
+        <li>背景をプールの水面する事で夏らしさを出している。</li>
+        <li>黄色の文字で夏の日光、エネルギッシュを表現。
         </li>
-        <li class="service__item item2">
-          <div class="online__text">
-            <h3>オンライン配送</h3>
-            <p>オンラインショッピングにて新鮮な野菜を配送しております。<br>無農薬かつ当農園の選りすぐりの野菜をお届け致します。<br>送料無料、即日発送をしております。</p>
-            <a href="online/online.html">野菜の購入はこちら</a>
-          </div>
-                    <div class="online__img">
-                      <img src="img/online.jpg" alt="">
-                    </div>
-        </li>
-        <li class="service__item item3">
-          <div class="move__img">
-            <img src="img/car.jpg" alt="">
-          </div>
-          <div class="move__text">
-            <h3>移動販売</h3>
-          <p>徳島県内の移動販売を行っております。<br>
-            三好市徳島区、農園区、田園区を定期的に回っております。<br>
-            詳しい時間帯等はこちらまで</p>
-          <a href="move/move.html">野菜の購入はこちら</a>
-          </div>
         </li>
       </ul>
-    </div><!--service__wrap-->
-
-      <div class="responsive__service">
-       <div class="service__wrap2 ">
-         <div class="service__wrap2item item1">
-           <a href="kodawari/kodawari.html">
-             <img src="img/responsive-kodawari.jpg" alt="">
-           </a>
-           <p>創業当時から変わらぬ無農薬を徹底して作っております。
-            無農薬のために身体に良く、健康に気を付けている方や
-            お子様に安心して食べて頂けます。</p>
-         </div>
-         <div class="service__wrap2item item2">
-           <a href="online/online.html">
-             <img src="img/responsive_buy.jpg" alt="">
-           </a>
-           <p>オンラインショッピングにて新鮮な野菜を配送しております。
-            無農薬かつ当農園の選りすぐりの野菜をお届け致します。
-            送料無料、即日発送をしております。</p>
-         </div>
-         <div class="service__wrap2item item3">
-           <a href="move/move.html">
-             <img src="img/responsive-move.jpg" alt="">
-           </a>
-           <p>徳島県内の移動販売を行っております。
-            三好市徳島区、農園区、田園区を定期的に回っております。
-            詳しい時間帯等はこちらまで</p>
-         </div>
-       </div>
-
-      </div>
-
-
-
-  </section>
-
-  <section class="acceess">
-    <h2>アクセス</h2>
-    <div class="access__wrap">
-      <div class="access__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217823.14062272792!2d133.6775380546536!3d34.02858301934985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35522f3acb1f7f8f%3A0xefef4b51576fc331!2z5b6z5bO255yM5LiJ5aW95biC!5e0!3m2!1sja!2sjp!4v1593146532139!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-      <div class="access__text">
-        <p class="access__text-add">住所</p>
-        <p>〒771-0000   徳島県三好市徳島町1-1</p>
-        <p>徳島町ホームセンターのすぐ前！</p>
-      </div>
+      <h1 class="modal__content_text2">バナーの概要</h1>
+      <ul>
+        <li>ターゲット　10代～20代の女性</li>
+        <li>ヤング向けショッピングモールのセールバナー</li>
+      </ul>
     </div>
-  </section>
+      <a class="js-modal-close fas fa-times" href=""></a>
+  </div><!--modal__inner-->
+</div><!--modal-->
+<div id="modal03" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    <div class="modal__content_img">
+    <img src="img/vegitable.jpg" alt="">
+  </div>
+  <div class="modal__content_about">
+    <h1 class="modal__content_text">デザインのポイント</h1>
+      <ul>
+        <li>背景を野菜にする事で、一瞬見るだけで何のバナーかを判断できるようにしている。</li>
+        <li>売りにしたい部分を右上に独立させる事で、目線が行きやすくしている。</li>
+        <li>下にかつ大きな表示で値段を見せ、クリックさせやすくしている。</li>
+      </ul>
+      <h1 class="modal__content_text2">バナーデザインのポイント</h1>
+      <ul>
+        <li>オンライン野菜配達サイトのバナー</li>
+        <li>ターゲット　20～40代の子育て中の夫婦</li>
+        <li>初回の利用者を増やすために作成</li>
+      </ul>
+    </div>
+      <a class="js-modal-close fas fa-times" href=""></a>
+  </div><!--modal__inner-->
+</div><!--modal-->
+<div id="modal02" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    <div class="modal__content_img">
+    <img src="img/piratis2.jpg" >
+  </div>
+  <div class="modal__content_about">
+    <h1 class="modal__content_text">デザインのポイント</h1>
+      <ul>
+        <li>元々の数字を出す事で今の値段の安さを強調。</li>
+        <li>フォントを明朝体にする事で女性らしさを表現。</li>
+      </ul>
+      <h1 class="modal__content_text2">バナーの概要</h1>
+      <ul>
+        <li>ターゲット　20～50代のピラティスに興味のあるピラティス未経験の女性</li>
+        <li>新規顧客獲得のためにバナー作成</li>
+      </ul>
+    </div>
+      <a class="js-modal-close fas fa-times" href=""></a>
+  </div><!--modal__inner-->
+</div><!--modal-->
+<div id="modal04" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    <div class="modal__content_img">
+    <img src="img/chocolate.jpg" >
+  </div>
+  <div class="modal__content_about">
+    <h1 class="modal__content_text">デザインのポイント</h1>
+      <ul>
+        <li>高級感かつ冬らしさを出すため、深い青色を使用。</li>
+        <li>視覚の導線を意識し、下に期間限定キャンペーンを配置。
+        </li>
+      </ul>
+      <h1 class="modal__content_text2">バナーの概要</h1>
+      <ul>
+        <li>こばやす（@kobayas_s）さんのバナーお題にて作成 <a href="https://note.com/kobayas/n/n7454d1ec9b95">こばやすさんのnote</a></li>
+        <li>冬限定チョコレート特別価格のバナー</li>
+        <li>ターゲット　20～40代の働く男女</li>
+      </ul>
+    </div>
+      <a class="js-modal-close fas fa-times" href=""></a>
+  </div><!--modal__inner-->
+</div><!--modal-->
 
-  <section class="about">
-<h2>会社概要</h2>
-<div class="company">
-  <div class="company__img">
-    <img src="img/ninjin.jpg" alt="" width="400px"
-    height="280px">
+
+
+<section id="repro" class="repro">
+  <!-- <div class="container"> -->
+    <h2>模写サイト</h2>
+        <div class="repro_wrap">
+          
+          <div class="repro_wrap-item item1">
+            <div class="repro_wrap-item-img">
+               <a href="flower/flower.html" target="_blank"><img src="img/flower.jpg" alt=""></a>
+            </div>
+            <div class="repro_wrap-item-text">
+              <p>flower</p>
+            </div>
+          </div>
+          <div class="repro_wrap-item item2">
+            <div class="repro_wrap-item-img">
+            <!-- <a href=""><img src="img/flower.jpg" alt=""></a> -->
+            </div>
+            <div class="repro_wrap-item-text">
+              <p></p>
+            </div>
+          </div>
+          <div class="repro_wrap-item item3">
+            <div class="repro_wrap-item-img">
+              <!-- <a href=""><img src="img/flower.jpg" alt=""></a>
+            </div> -->
+            <div class="repro_wrap-item-text">
+              <p></p>
+            </div>
+          </div>
+    
+      </div>
+    </section>
   </div>
-  <div class="company__list">
-   <table>
-     <tr>
-       <th>会社名</th> 
-       <td>徳島ファーム</td>
-     </tr>
-     <tr>
-       <th>住所</th> 
-       <td>徳島県三好市徳島町1-1</td>
-     </tr>
-     <tr>
-       <th>TEL</th> 
-       <td>088-000-0000</td>
-     </tr>
-     <tr>
-       <th>FAX</th> 
-       <td>088-000-0001</td>
-     </tr>
-     <tr>
-       <th>営業時間</th> 
-       <td>06：00　～　18：00</td>
-     </tr>
-   </table>
-  </div>
-</div>
-  </section>
+</section>
+
+<section id="contact" class="contact">
+<h2>お問い合わせ</h2>
+<p>お問い合わせは以下のアドレスまでご連絡ください</p>
+<p>sinju.abc@gmail.com</p>
+</section>
+
 <footer class="footer">
-  <nav class="footer__list">
-    <ul>
-      <li><a href="">TOP</a></li>
-      <li><a href="">こだわり</a></li>
-      <li><a href="">オンライン配送</a></li>
-      <li><a href="">移動販売</a></li>
-      <li><a href="">お問合せ</a></li>
-    </ul>
-  </nav>
-  <div class="footer__company">
-    <img src="img/logo.png" alt=""width="100px">
-<p></p>
-<p><span>住所</span> 徳島県三好市徳島町1-1</p>
-<p><span>TEL</span> 088-000-0000</p>
-<p><span>FAX</span> 088-000-0001</p>
-<p><span>営業時間</span> 06：00　～　18：00</p>
-  </div>
 
 </footer>
-
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script>
- $(document).ready(function(){
-      $('.header__mv').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    });
-  </script>
+<script></script>
 </body>
 </html>
