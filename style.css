@@ -235,42 +235,37 @@ input[type="checkbox"] {
 .site_wrap {
   /* display: flex;
   justify-content: space-around;
-  margin-bottom: 100px; */
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin: 0 50px; */
+  margin:0 50px 50px 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  margin: 0 15px  100px 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* margin: 0 15px  100px 15px; */
 }
 
 
 .site_wrap-item-img {
-  height: 250px;
-  width: 350px;
-  /* border: 1px solid black; */
+  margin: 10px;
 }
 .site_wrap-item-img a:hover {
   opacity: 0.8;
 }
 
+
+
 .site_wrap-item-img img {
-  width:350px;
-	height: 250px;
-  object-fit: contain;
+
 }
 
 .site_wrap-item-text p {
-  margin: auto;
-  padding: 20px 100px;
-}
-.item4 p {
-  margin: auto;
-  padding: 20px 70px;
+padding-left: 80px;
 }
 /*  架空サイト */
 .ficsite_wrap {
-  /* display: flex;
-  justify-content: space-around; */
+  margin:0 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .ficsite_about h3  {
@@ -280,8 +275,7 @@ input[type="checkbox"] {
 
 
 .ficsite_wrap-item-img {
-  height: 250px;
-  width: 350px;
+  margin: 10px;
   /* border: 1px solid black; */
 }
 .ficsite_wrap-item-img a:hover {
@@ -289,9 +283,9 @@ input[type="checkbox"] {
 }
 
 .ficsite_wrap-item-img img {
-  width:350px;
+  /* width:350px;
 	height: 250px;
-	object-fit: scale-down;
+	object-fit: scale-down; */
 }
 
 .ficsite_wrap-item-text p {

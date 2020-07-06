@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px;
+}
+
+.header {
+  position: relative;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+
+.header__logo img {
+ width: 80%;
+}
+
+.header__list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__list a {
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 3px 5px #000000;
+}
+.header__list li {
+  padding: 0 15px;
+}
+
+
+.header__title h1 {
+  color: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  writing-mode: vertical-rl;
+  /* -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
+  text-shadow: 1px 3px 5px #000000;
+  font-size: 300%;
+}
+.responsiveheader__title {
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 100%;
+  writing-mode: vertical-rl;
+  /* -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
+  text-shadow: 1px 3px 5px #000000;
+  font-size: 100%;
+}
+
+.info {
+ text-align: center;
+}
+.info__items {
+  width: 700px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 400px;
+ height: 350px; 
+resize: vertical;
+min-height: 50px;
+max-height: 120px;
+margin-left: 40px;
+}
+
+.info__item input {
+  width: 400px;
+  height: 50px;
+margin-left: 30px;
+}
+
+.info__item {
+margin: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+.text label {
+  vertical-align:top;
+  font-weight: 600;
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  margin-left: 30px;
+}
+
+.btn input {
+  margin-bottom: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 5px 5px #000000;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.footer {
+  background-image: url(../img/sky__footer.jpg);
+  background-size: cover;
+  height: 250px;
+  padding: 0 0  20px 50px;
+ }
+ 
+ 
+ .footer__list ul {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+ }
+ 
+ .footer__list li {
+   padding: 15px;
+ }
+ 
+ .footer__list a {
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 3px 5px #000000;
+ }
+ 
+ .footer__list a:hover {
+   border-bottom: 2px solid #ffffff;
+   padding-bottom: 5px;
+ }
+ 
+ .footer__company {
+   padding-left: 15px;
+   font-weight: 600;
+
+ }
+ .footer__company h4 {
+   margin: 0;
+   padding: 5px;
+ }
+ .footer__company p {
+   margin: 0;
+   padding: 5px;
+   color: #ffffff;
+   text-shadow: 1px 3px 5px #000000;
+   cursor: default;
+ }
+
+ @media screen and (min-width:768px) and ( max-width:2000px) {
+  .responsiveheader__title {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) { 
+  .footer__list {
+    display: none;
+  }
+
+  .header__title h1 {
+    display: none;
+  }
+
+  .footer__company {
+    padding-top: 30px;
+  }
+}
+
