@@ -5,8 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>徳島ファーム　お問合せフォーム</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
+ 
+  <input id="menu" type="checkbox" />
+  <label for="menu" class="open"><i class="fas fa-bars"></i></label>
+  <label for="menu" class="back"></label>
+  <aside class="aside">
+    <!--🍔-->
+  <label for="menu" class="close">×</label>
+    <nav class="modalheader__list">
+      <img src="img/logo.png" alt="">
+      <ul>
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../kodawari/kodawari.html">こだわり</a></li>
+        <li><a href="../online/online.html">オンライン配送</a></li>
+        <li><a href="../move/move.html">移動販売</a></li>
+        <li><a href="../info/reservation.html">お問合せ</a></li>
+      </ul>
+    </nav>
+  </aside>
+
   <header class="header">
     <div class="header__wrap">
       <div class="header__logo">
@@ -33,30 +53,25 @@
   <h1>お問合せ</h1>
 </div>
   </header>
-<div class="info">
-<h2>お問合せ</h2>
-<div class="info__items">
-  <div class="info__item name">
-    <label class="label label_name">お名前</label>
-    <input class="inputs" type="text" name="name">
+<div class="form">
+  <div class="form-item">
+    <p class="form-item_label"><span class="form-item-label-important">※必須</span>名前</p>
+    <input type="text" class="input" placeholder="お名前をご入力ください">
   </div>
-  <div class="info__item add">
-    <label class="label label_add">メールアドレス</label>
-    <input class="inputs" type="email" name="email">
+  <div class="form-item">
+    <p class="form-item_label"><span class="form-item-label-important">※必須</span>電話番号</p>
+    <input type="text" class="input" placeholder="お電話番号をご入力ください">
   </div>
-  <div class="info__item namber">
-    <label class="label label_namber">電話番号</label>
-    <input class="inputs" type="phone namber" name="phone namber">
+  <div class="form-item">
+    <p class="form-item_label"><span class="form-item-label-important">※必須</span>メールアドレス</p>
+    <input type="text" class="input" placeholder="メールアドレスをご入力ください">
   </div>
-  <div class="info__item text">
-    <label class="label label_text">お問合せ内容</label>
-    <textarea class="inputs"></textarea>
+  <div class="form-item">
+    <p class="form-item-label message"><span class="form-item-label-important">※
+      必須</span>お問合せ内容</p>
+    <textarea class="textarea"></textarea>
   </div>
-  <div class="btn">
-    <input type="submit" value="送信する">
-  </div>
-</div>
-
+  <input type="submit" class="btn" value="送信する">
 </div>
 
 <footer class="footer">

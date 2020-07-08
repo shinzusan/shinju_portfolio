@@ -30,6 +30,23 @@ input[type="checkbox"] {
   position: absolute;
   left: -50vw;
 }
+.fas {
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.modalheader__list a {
+ font-size: 120%;
+ font-weight: 600;
+}
+
+.modalheader__list img {
+  width: 50%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.modalheader__list li {
+  padding: 5px 10px;
+}
 
 .aside_list a {
   color: black;
@@ -80,18 +97,32 @@ input[type="checkbox"] {
   position: relative;
 }
 
-.header__title {
+.header__title h1 {
   color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   writing-mode: vertical-rl;
-  height: 400px;
+  height: 450px;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   text-shadow: 1px 3px 5px #000000;
-  font-size: 100%;
+  font-size: 250%;
+}
+
+.responsiveheader__title h1{
+  color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    writing-mode: vertical-rl;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 3px 5px #000000;
+    font-size: 100%;
+    height: 180px;
 }
 
 .header__online {
@@ -113,9 +144,6 @@ input[type="checkbox"] {
   color: green;
 }
 
-.service {
-  /* margin: 0 50px; */
-}
 /* ななめ */
 .service__wrap {
   display: table;
@@ -365,9 +393,13 @@ input[type="checkbox"] {
   left: -50vw;
 }
 
-@media screen and (min-width:1024px) and ( max-width:2000px) {
+@media screen and (min-width:1025px) and ( max-width:2000px) {
   /*　画面サイズが768pxから1024pxまではここを読み込む　*/
 .responsive__service {
+  display: none;
+}
+
+.responsiveheader__title {
   display: none;
 }
 
@@ -395,6 +427,7 @@ input[type="checkbox"] {
   position: absolute;
   top: 5px;
   right: 10px;
+  width: 20%;
 }
 
 .header__list {
@@ -435,6 +468,10 @@ input[type="checkbox"] {
     background: rgba(0, 0, 0, 0.8) ;
     z-index: 50;
   } 
+
+  .responsiveheader__title {
+    display: none;
+  }
   
   .service__wrap {
     display: none;
@@ -473,15 +510,67 @@ input[type="checkbox"] {
 
 
 
+@media screen and (max-width: 850px) {
+  .header__title {
+    display: none;
+  }
+  .responsiveheader__title {
+    display: block;
+  }
+}
 @media screen and (max-width: 768px)  {
-  h1 {
+  .header__list {
     display: none;
   }
   
+  .access__text {
+    width: auto;
+  }
+   .header__title h1 {
+     display: none;
+   }
 
 @media screen and (max-width: 600px)  {
-  
+  .header__title {
+    display: none;
+  }
+ 
   .access__map iframe {
     width: auto;
   }
+  .company__img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .company__list {
+   width: 300px;
+  }
+
+  .company__list {
+    width: auto;
+  }
+  table {
+    width: 285px;
+  }
+}
+
+.responsiveheader__title {
+  display: block;
+}
+
+@media screen and (max-width: 480px)  {
+  .header__title {
+    display: none;
+  }
+  .access__map iframe {
+    width: auto;
+  }
+  .title  {
+padding-top: 0;
+  }
+  
+.responsiveheader__title {
+ padding-top:5px;
+}
 }

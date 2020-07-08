@@ -10,6 +10,7 @@ li {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h2 {
@@ -65,71 +66,95 @@ h2 {
 .responsiveheader__title {
   color: #ffffff;
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 10%;
   height: 100%;
   writing-mode: vertical-rl;
-  /* -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%); */
   text-shadow: 1px 3px 5px #000000;
+  font-size: 80%;
+}
+
+.form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.form-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.form-item_label {
+  width:100%;
+  max-width: 248px;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
   font-size: 100%;
 }
 
-.info {
- text-align: center;
-}
-.info__items {
-  width: 700px;
-  margin: 0 auto;
-}
-
-textarea {
-  width: 400px;
- height: 350px; 
-resize: vertical;
-min-height: 50px;
-max-height: 120px;
-margin-left: 40px;
-}
-
-.info__item input {
-  width: 400px;
-  height: 50px;
-margin-left: 30px;
-}
-
-.info__item {
-margin: 20px;
-}
-
-label {
+.form-item-label .message {
+  margin-top: 8px;
+  margin-bottom: auto;
   font-weight: 600;
-  display: inline-block;
-  width: 200px;
-  text-align: right;
 }
-
-.text label {
-  vertical-align:top;
-  font-weight: 600;
+.form-item-label-important {
+  border-radius: 4px;
+  margin:8px ;
+  width: 60px;
   display: inline-block;
-  width: 140px;
-  text-align: right;
-  margin-left: 30px;
-}
-
-.btn input {
-  margin-bottom: 100px;
-  display: inline-block;
-  padding: 10px 20px;
+  text-align: center;
   background-color: green;
   color: #ffffff;
-  border-radius: 4px;
-  box-shadow: 5px 5px #000000;
-  cursor: pointer;
-  margin-top: 30px;
+  font-size: 100%;
 }
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 1em;
+  padding:0 1em;
+  height: 50px;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  font-size: 100%;
+}
+
+.textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 100px;
+  padding: 5px 1em;
+  height: 200px;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  font-size: 100%;
+}
+.btn {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+  padding: 20px 10px;
+  width: 300px;
+  display: block;
+  background: green;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 100%;
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+
 
 .footer {
   background-image: url(../img/sky__footer.jpg);
@@ -177,8 +202,24 @@ label {
    cursor: default;
  }
 
- @media screen and (min-width:768px) and ( max-width:2000px) {
+ 
+
+.open,
+.close {
+  display: none;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
+}
+
+
+ @media screen and (min-width:769px) and ( max-width:2000px) {
   .responsiveheader__title {
+    display: none;
+  }
+  .modalheader__list {
     display: none;
   }
 }
@@ -195,5 +236,152 @@ label {
   .footer__company {
     padding-top: 30px;
   }
+
+.header__list {
+  display: none;
 }
+
+.header__logo img {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 20%;
+}
+.footer__list {
+ display: none;
+}
+
+.header__title {
+ display:none;
+}
+
+
+.footer__company {
+ padding-top: 30px;
+}
+
+
+.fas {
+color: green;
+}
+
+.header__logo img {
+position: absolute;
+top: 5px;
+right: 10px;
+width: 20%;
+}
+
+.header__list {
+display: none;
+}
+.open,
+.close {
+  display: block;
+  font-size: 30px;
+}
+
+ .open {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  padding:5px 10px;
+}
+.close {
+  padding-left: 8px;
+}
+.aside {
+  width: 250px;
+  position: absolute;
+  left: -250px;
+  height: 100%;
+  transition: all 0.2s;
+  background: #ffffff;
+  z-index: 100;
+  top: 0;
+}
+
+.modalheader__list li {
+ padding:7px;
+ font-size: 120%;
+ font-weight: 600;
+}
+
+input[type="checkbox"]:checked ~ .aside {
+  left: 0;
+}
+
+input[type="checkbox"]:checked ~ .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) ;
+  z-index: 50;
+} 
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .responsiveheader__title {
+    font-size: 60%;
+    top: 28%;
+    left: 13%;
+  }
+
+  .form {
+    margin-top: 50px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .form-item {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+.form-item_label {
+  max-width: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 100%;
+}
+
+.form-item-label .message{
+  margin-top: 0;
+}
+.form-item-label-important {
+  border-radius: 4px;
+  padding: 4px;
+  width: 50px;
+  font-size: 80%;
+}
+
+.input {
+  margin-left: 0;
+  margin-top: 15px;
+  height: 40px;
+  flex: inherit;
+  font-size: 60%;
+  width: 250px;
+}
+
+.textarea {
+  margin-left: 0;
+  margin-top: 15px;
+  height: 200px;
+  flex: inherit;
+  font-size: 60%;
+  width: 250px;
+}
+.btn {
+  margin-top: 24px;
+  margin-left: 100px;
+  padding: 8px;
+  width: 100px;
+  font-size: 100%;
+}
+
+}
+
 
