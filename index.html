@@ -26,6 +26,7 @@
           <li><a href="#skill">skill</a></li>
           <li><a  href="#strength">私の強み</a></li>
           <li><a href="#site">架空サイト</a></li>
+          <!-- <li><a  href="#strength">実績</a></li> -->
           <li><a href="#repro">模写サイト</a></li>
           <li><a href="#contact">お問合せ</a></li>
         </ul>
@@ -44,6 +45,7 @@
       <li class="header__list-item"><a href="#skill">skill</a></li>
       <li class="header__list-item"><a href="#strength">私の強み</a></li>
       <li class="header__list-item"><a href="#site">架空サイト・バナー</a></li>
+      <!-- <li class="header__list-item"><a href="#">実績</a></li> -->
       <li class="header__list-item"><a href="#repro">模写サイト</a></li>
       <li class="header__list-item"><a href="#contact">お問合わせ</a></li>
     </ul>
@@ -61,11 +63,19 @@
     <img src="img/about2.jpg" alt="">
   </div>
   <div class="about__body">
-    <h3>徳永　真珠（しんじゅ）　23歳</h3>
-    <p>年齢　23歳</p>
-    <p>前職では、1年間不動産の営業として仕事をしておりました。<br>身体の不調をきっかけに退職をしましたが、以前からの目標である「自立した女性になる」ことを叶えるために独学にて、4月からWebデザイナーの勉強をしております。<br>未経験からの転職ですが、前職の営業職で培った力も活かしていきたいと思っております。<br>
-  将来的には、ユーザー目線に立って企画をし、マーケティングもできるようなWebデザイナーになりたいと考えています。
-    </p>
+    <div class="about__text1">
+      <h3 class>徳永　真珠（しんじゅ）</h3>
+      <p>年齢　23歳</p>
+    </div>
+      <p>
+        前職では身体の不調をきっかけに退職をしましたが、以前からの目標である「自立した女性になる」ことを叶えるために独学にて、4月からWebデザイナーの勉強をしております。未経験からの転職ですが、前職の営業職で培った力も活かしていきたいと思っております。</p>
+    <p>私は、前職でコインパーキングの新規開拓の提案営業を一貫して行っておりました。
+      その営業の中で、地主様と情報収集を提案に生かしてリレーション構築をしっかりと行い、信頼を得ていたことから、5年間の2,000万円の売り上げを達成致しました。また、契約をしてから管理も営業が行うため、地主様のアフターフォローもしっかりとしておりました。その結果、信頼を継続して得ていたため、確度の高い案件を定期的に頂いておりました。</p>
+      <p>チームとしての役割は、自らメンバーの仕事の補助をしたり、メンタル面での相談役となっておりました。これら経験を生かして、お客様やユーザーに寄り添ったWeb制作をし、チームで協力をしていきたいと思います。
+      </p>
+
+        <p>また、将来的にはユーザー目線に立って企画をし、マーケティングもできるようなWebデザイナーになりたいと考えています。
+      </p>
     <h4>趣味特技 ドラム・ボーリング</h4>
     <small>ドラムは中学2年生から10年間続けております。高校生では、バンドにて県外進出をしております。</small>
   </div>
@@ -158,7 +168,9 @@
       <div class="skill__txt">
       <h3>WordPress</h3>
       <p>★★☆☆☆</p>
-      <p>WordPressにてブログを更新しております。<br>こちらも見ていただければと存じます。</p>
+      <p>WordPressにてブログを更新しております。</p>
+        <p>こちらも見ていただければと存じます。</p>
+        <a href="http://pearl1996.com">ブログを見る</a>
       </div>
     </div>
     <div class="skill__item item7">
@@ -177,7 +189,13 @@
 
 </section>
 
-
+<section class="perform">
+  <div class="perform__weap">
+    <div class="perform_wrap-item item1">
+    </div>
+  </div>
+</section>
+ 
 <section id="site" class="site">
   <div class="container">
     <h2>架空サイト・バナー</h2>
@@ -231,7 +249,9 @@
               <a class="" href="tokusimafarm/index.html" target="_blank"><img src="img/tokusimafa-mu.jpg" alt=""></a>
             </div>
             <div class="site_wrap-item-text">
-              <p>徳島県農家のサイト</p>
+              <p class="site_wrap-item-text_item1">徳島ファーム</p>
+              <a class="concept" href="concept/tokushimafarm_concept.html">コンセプトを見る</a>
+              <a class="site_access" href="tokusimafarm/index.html">サイトにアクセス</a>
             </div><!--text-->
            </div><!--item-->
                             <div class="ficsite_wrap-item item1">
@@ -239,7 +259,9 @@
                               <a class="" href="italy/index.html" target="_blank"><img src="img/italy.jpg"></a>
                               </div>
                                  <div class="site_wrap-item-text">
-                                    <p>高級イタリアンレストランサイト</p>
+                                   <p class="site_wrap-item-text_item2">高級イタリアンレストランサイト</p>
+                                   <a href="">コンセプトを見る</a>
+                                    <a href="italy/index.html">サイトにアクセス</a>
                                  </div><!--text-->
                             </div><!--item-->
              <div class="ficsite_wrap-item item1">
@@ -294,7 +316,7 @@
       <h1 class="modal__content_text2">バナーデザインのポイント</h1>
       <ul>
         <li>オンライン野菜配達サイトのバナー</li>
-        <li>ターゲット　20～40代の子育て中の夫婦</li>
+        <li>ターゲット　20～40代の無農薬野菜を求めている方</li>
         <li>初回の利用者を増やすために作成</li>
       </ul>
     </div>

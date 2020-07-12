@@ -95,7 +95,6 @@ input[type="checkbox"] {
 .about {
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 600px;
 }
 
 .about__ttl {
@@ -107,32 +106,32 @@ input[type="checkbox"] {
   /* display: flex;
   flex-wrap: wrap;
   justify-content: center; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
 }
 
 .about__img {
-  padding-left: 200px;
+  text-align: center;
 }
 
 
 .about__body {
-  width: 450px;
-  padding: 10px;
+  width: 60%;
+margin: 0 auto;
 }
 
 .about__body p {
-  margin: 10px 0;
+  margin: 20px 0;
+  letter-spacing: 0.05rem;
+}
+.about__text1 {
+  text-align: center;
 }
 
 .about__body h4 {
   margin-top: 20px;
 }
 
-.strength {
-  /* height: 350px;
-  margin: 50px 0 100px 0; */
-}
 
 .strength_wrap {
   /* display: flex;
@@ -201,7 +200,13 @@ input[type="checkbox"] {
   margin-top: 5px;
 }
 
-
+.skill__item a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  background: black;
+  color: #ffffff;
+}
 
 
 
@@ -243,7 +248,18 @@ input[type="checkbox"] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* margin: 0 15px  100px 15px; */
 }
+.site_wrap-item-text a {
+  display: inline-block;
+  background: black;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 80%;
+  margin-left: 18px;
+}
 
+.site_wrap-item-text p {
+  padding-left: 75px;
+}
 
 .site_wrap-item-img {
   margin: 10px;
@@ -258,8 +274,11 @@ input[type="checkbox"] {
 
 }
 
-.site_wrap-item-text p {
-padding-left: 80px;
+.site_wrap-item-text .site_wrap-item-text_item1 {
+padding-left: 100px;
+}
+.site_wrap-item-text .site_wrap-item-text_item2 {
+padding-left: 30px;
 }
 /*  架空サイト */
 .ficsite_wrap {
@@ -430,11 +449,18 @@ padding-left: 80px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.repro {
+  margin: 0 70px;
+}
 
 .repro_wrap-item-img img {
   height: 250px;
   width: 350px;
   object-fit: scale-down;
+}
+
+.repro_wrap-item {
+  margin: 10px;
 }
 
 .repro p {

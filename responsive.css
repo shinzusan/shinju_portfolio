@@ -186,6 +186,7 @@ input[type="checkbox"]:checked ~ .back {
 
     .site_wrap {
       grid-template-columns: 1fr;
+      margin: 0;
     }
 
     .ficsite_wrap-item-img {
@@ -199,7 +200,7 @@ input[type="checkbox"]:checked ~ .back {
     }
 
     .site_about {
-      margin: 0 50px;
+      margin: 0 ;
     }
 
     .site_wrap-item .item3 img {
@@ -209,6 +210,7 @@ input[type="checkbox"]:checked ~ .back {
 
     .ficsite_wrap {
       grid-template-columns: 1fr;
+      margin: 0;
     }
   .ficsite_wrap-item-img {
     width: auto;
@@ -217,6 +219,15 @@ input[type="checkbox"]:checked ~ .back {
 
     .repro_wrap {
       grid-template-columns: 1fr;
+    }
+
+    .repro img {
+      margin: 0;
+      width: 300px;
+    }
+
+    .repro {
+      margin: 0;
     }
 
   }
