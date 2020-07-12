@@ -16,10 +16,9 @@ a {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 35px;
   text-align: center;
 }
-
 
 .open,
 .close {
@@ -131,6 +130,24 @@ input[type="checkbox"] {
   right: 20px;
   z-index: 100;
 }
+
+.header__online_small a {
+  position: fixed;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  display: block;
+  padding: 10px 10px;
+  top: 45%;
+  right: 0;
+  background: green;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 120%;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+
 .slick-next  {
   display: none;
 }
@@ -142,6 +159,10 @@ input[type="checkbox"] {
 }
 .title h2 {
   color: green;
+}
+
+.title {
+  font-weight: 600;
 }
 
 /* ななめ */
@@ -398,6 +419,9 @@ input[type="checkbox"] {
 .responsive__service {
   display: none;
 }
+.header__online_small {
+  display: none;
+}
 
 .responsiveheader__title {
   display: none;
@@ -418,8 +442,10 @@ input[type="checkbox"] {
 
 /* 1000以下 */
 @media screen and (max-width: 1024px)  {
-
-.fas {
+.header__online {
+  display: none;
+}
+.fa-bars {
   color: green;
 }
 
@@ -478,10 +504,6 @@ input[type="checkbox"] {
   }
 
 
-
-  .header__online {
-    display: none;
-  }
   .service__wrap2item p {
     width: 250px;
     margin: 10px auto;
@@ -519,7 +541,13 @@ input[type="checkbox"] {
   }
 }
 @media screen and (max-width: 768px)  {
+  .header__online {
+    display: none;
+  }
   .header__list {
+    display: none;
+  }
+  .header__online {
     display: none;
   }
   
@@ -563,6 +591,24 @@ input[type="checkbox"] {
   .header__title {
     display: none;
   }
+
+ 
+.header__online_small a {
+  position: fixed;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  display: block;
+  padding: 5px 2px;
+  top: 30%;
+  right: 0;
+  background: green;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 100%;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
   .access__map iframe {
     width: auto;
   }
@@ -573,4 +619,5 @@ padding-top: 0;
 .responsiveheader__title {
  padding-top:5px;
 }
+
 }
