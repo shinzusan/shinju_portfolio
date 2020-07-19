@@ -60,12 +60,12 @@ h2 {
 
 
 .header__list ul {
-  /* width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  margin: 0 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); */
 }
 
 .header__list a {
@@ -207,6 +207,34 @@ margin: 0 auto;
   background: black;
   color: #ffffff;
 }
+
+/* 実績 */
+.perform_wrap {
+  margin:0 50px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.perform_about h3  {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+
+.perform_wrap-item-img {
+  margin: 10px;
+}
+.perform_wrap-item-img a:hover {
+  opacity: 0.8;
+}
+
+
+.perform_wrap-item-text p {
+  text-align: center;
+  margin-top: 20px;
+}
+/* 実績ここまで */
 
 
 
