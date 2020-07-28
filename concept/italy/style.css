@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  line-height: 1.8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 50px;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.header__mv {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  background-image: url(../../img/mv2.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.header__mv h1 {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  text-align: left;
+  font-size: 50px;
+}
+
+.header__list {
+  background: black;
+  padding: 15px 0;
+  opacity: 0.8;
+}
+
+
+.header__list ul {
+  /* width: 100%;
+  display: flex;
+  justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin: 0 50px;
+}
+
+.header__list a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.mockup img {
+  width: 50%;
+}
+.mockup__img {
+  text-align: center;
+}
+
+.mockup__textitems {
+  margin: 60px 0 ;
+}
+
+.mockup__text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 30px auto;
+  letter-spacing: 0.05rem;
+  /* border-bottom: 1px dotted #ddd; */
+  padding-bottom: 30px;
+}
+
+.mockup__text h3 {
+  margin-right: 200px;
+}
+
+.about h3 {
+  margin-right: 180px;
+}
+.about p {
+  width: 60%;
+}
+.point h3 {
+margin-right: 120px;
+}
+.point p {
+  width: 60%;
+}
+
+.time h3 {
+  margin-right: 210px;
+}
+.url h3 {
+  margin-right: 240px;
+}
+
+
+.site__imgitems img  {
+width: 300px;
+height: auto;
+align-self: flex-start;
+margin: 50px auto;
+}
+
+.site__imgitems {
+  width: 70%;
+  margin: auto;
+  display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  height: 100px;
+  background: black;
+}
+
+.footer a {
+  color: #ffffff;
+}
+.footer a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.footer span {
+  font-size: 100%;
+  padding-right: 10px;
+}

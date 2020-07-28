@@ -7,16 +7,17 @@
 
 @media screen and (max-width: 1024px) {
 
-  .strength {
-    padding-top: 150px;
-  }
-
   .about__img {
     margin: 0 auto;
     padding: 0;
   }
   .about__body{
     margin: 0 auto;
+  }
+  .ficsite_wrap-item-textbtn ul {
+   flex-direction: column;
+   width: 180px;
+   margin: 0 auto;
   }
 }
 
@@ -88,19 +89,23 @@ input[type="checkbox"]:checked ~ .back {
      flex-direction: column;
    }
 
-   .strength {
-     padding-top: 200px;
-   }
 
    .about__body {
      width: auto;
      margin: 0 auto;
+   }
+
+   .perform_wrap-item-text {
+     width: 100%;
    }
    .site_wrap-item {
      margin: 0 auto;
    }
    .ficsite_wrap-item {
      margin: 0 auto;
+   }
+   .ficsite_wrap-item-text {
+     width: 100%;
    }
    .repro_wrap-item {
      margin: 0 auto;
@@ -168,10 +173,6 @@ input[type="checkbox"]:checked ~ .back {
     }
 
 
-    .strength {
-      padding-top: 350px;
-    }
-
     .strength_wrap {
       grid-template-columns: 1fr;
     }
@@ -198,6 +199,11 @@ input[type="checkbox"]:checked ~ .back {
       grid-area: item;
   
     }
+    .perform_wrap-item img {
+      width: 80%;
+      padding: 0;
+      margin: 0 auto;
+    }
 
     .site_about {
       margin: 0 ;
@@ -215,6 +221,9 @@ input[type="checkbox"]:checked ~ .back {
   .ficsite_wrap-item-img {
     width: auto;
     padding-right: 10px;
+  }
+  .ficsite_wrap-item img {
+    width: 80%;
   }
 
     .repro_wrap {

@@ -209,31 +209,48 @@ margin: 0 auto;
 }
 
 /* 実績 */
-.perform_wrap {
-  margin:0 50px;
-  display: grid;
+
+.perform_wrap-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.perform_wrap-item img {
+  padding: 0 50px;
+  width: 500px;
+}
+.perform_wrap-item-text {
+  margin-top: 50px;
+  width: 40%;
+  letter-spacing: 0.05rem;
+  padding: 0 50px;
+}
+.perform_wrap-item-concept {
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 10px;
 }
-
-.perform_about h3  {
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-
-
-.perform_wrap-item-img {
-  margin: 10px;
-}
-.perform_wrap-item-img a:hover {
-  opacity: 0.8;
-}
-
-
-.perform_wrap-item-text p {
+.perform_wrap-item-img h3 {
   text-align: center;
-  margin-top: 20px;
 }
+.perform_wrap-item-text h3 {
+text-align: center;
+margin: 20px 0;
+}
+.perform_wrap-item-text {
+margin-top: 20px;
+}
+.perform_wrap-item-text a {
+ width: 110px;
+ display: block;
+  background: black;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
 /* 実績ここまで */
 
 
@@ -266,23 +283,11 @@ margin: 0 auto;
 
 
 .site_wrap {
-  /* display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-  margin: 0 50px; */
+
   margin:0 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* margin: 0 15px  100px 15px; */
-}
-.site_wrap-item-text a {
-  display: inline-block;
-  background: black;
-  color: #ffffff;
-  padding: 10px 15px;
-  font-size: 80%;
-  margin-left: 18px;
 }
 
 .site_wrap-item-text p {
@@ -298,10 +303,6 @@ margin: 0 auto;
 
 
 
-.site_wrap-item-img img {
-
-}
-
 .site_wrap-item-text .site_wrap-item-text_item1 {
 padding-left: 100px;
 }
@@ -309,35 +310,49 @@ padding-left: 100px;
 padding-left: 30px;
 }
 /*  架空サイト */
-.ficsite_wrap {
-  margin:0 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 
-.ficsite_about h3  {
-  margin-left: 50px;
-  margin-bottom: 20px;
+.ficsite_wrap-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
-
-
-.ficsite_wrap-item-img {
-  margin: 10px;
-  /* border: 1px solid black; */
+.ficsite_wrap-item img {
+  padding: 0 50px;
+  width: 450px;
 }
-.ficsite_wrap-item-img a:hover {
-  opacity: 0.8;
+.ficsite_wrap-item-text {
+  width: 40%;
+  letter-spacing: 0.05rem;
+  padding: 0 50px;
 }
-
-.ficsite_wrap-item-img img {
-  /* width:350px;
-	height: 250px;
-	object-fit: scale-down; */
-}
-
-.ficsite_wrap-item-text p {
+.ficsite_wrap-item-concept {
   text-align: center;
-  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.ficsite_wrap-item-img h3 {
+  text-align: center;
+}
+.ficsite_wrap-item-text h3 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.ficsite_wrap-item-textbtn ul {
+ display: flex;
+ justify-content: center;
+}
+.ficsite_wrap-item-textbtn li {
+  margin: 30px 10px 10px 10px;
+}
+.ficsite_wrap-item-textbtn a {
+  background-color: black;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 80%;
+}
+.ficsite_wrap .item2 {
+  margin-top: 50px;
 }
 /* kokomade */
 

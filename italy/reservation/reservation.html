@@ -7,25 +7,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- <div class="form">
-  <h1>ご予約</h1>
-  <form action="">
 
-  <label>お名前</label><br>
-  <input type="text" name="first-name" maxlength="20" value="" placeholder="イタリア　太郎">
-
-  <label>生年月日</label><br>
-  <input type="date" name="birthday" value="">
-
-
-<select name="pull-down">
-  <option value="course1">本場イタリアお誕生日コース12品</option>
-  <option value="course2">14品ボリュームコース</option>
-  <option value="course3">12品シークレットコース</option>
-</select>
-
-</form>
-</div> -->
 <header class="header">
   <div class="header_logo">
     <h1>
@@ -36,51 +18,35 @@
 <p><a href="../index.html">ホームに戻る</a></p>
 </header> 
   
-<div class="container">
-
-
-<div class="forms">
-<form class="form">
-  
-  <div class="name">
-    <label class="label label_name">お名前</label>
-    <input class="inputs" type="text" name="name">
+<div class="main">
+<h2>ご予約フォーム</h2>
+  <div class="form">
+    <div class="form-item">
+      <p class="form-item_label"><span class="form-item-label-important">※必須</span>名前</p>
+      <input type="text" class="input" placeholder="お名前をご入力ください">
+    </div>
+    <div class="form-item">
+      <p class="form-item_label"><span class="form-item-label-important">※必須</span>電話番号</p>
+      <input type="text" class="input" placeholder="お電話番号をご入力ください">
+    </div>
+    <div class="form-item">
+      <p class="form-item_label"><span class="form-item-label-important">※必須</span>メールアドレス</p>
+      <input type="text" class="input" placeholder="メールアドレスをご入力ください">
+    </div>
+    <div class="form-item">
+      <p class="form-item_label"><span class="form-item-label-important">※必須</span>コース選択</p>
+      <select name="pull-down">
+        <option value="course1">本場イタリアお誕生日コース12品 ￥10,000（税別）</option>
+        <option value="course2">14品ボリュームコース　￥12,000（税別）</option>
+        <option value="course3">12品シークレットコース　￥15,000（税別）</option>
+      </select>
+    </div>
+    <div class="form-item">
+      <p class="form-item-label message">備考</p>
+      <textarea class="textarea"></textarea>
+    </div>
+    <input type="submit" class="btn" value="予約をする">
   </div>
-  
-  <div class="add">
-    <label class="label label_add">メールアドレス</label>
-    <input class="inputs" type="email" name="email">
-  </div>
-
-  <div class="namber">
-    <label class="label label_namber">電話番号</label>
-    <input class="inputs" type="phone namber" name="phone namber">
-  </div>
-
-  <div class="menu">
-    <label class="label label_menu">ご予約メニュー</label>
-    <select name="pull-down">
-      <option value="course1">本場イタリアお誕生日コース12品</option>
-      <option value="course2">14品ボリュームコース</option>
-      <option value="course3">12品シークレットコース</option>
-    </select>
-  </div>
-  
-  <div class="text">
-    <label class="label label_text">コメント
-    </label>
-    <textarea class="inputs"></textarea>
-  </div>
-
-  <div class="btn-area">
-    <input type="submit" value="予約する">
-  </div>
-
-</form>
-<div class="form_img">
-</div>
-
-</div>
 </div>
 
 <footer class="footer">
