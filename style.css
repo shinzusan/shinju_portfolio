@@ -208,7 +208,6 @@ margin: 0 auto;
   color: #ffffff;
 }
 
-/* 実績 */
 
 .perform_wrap-item {
   display: flex;
@@ -251,7 +250,6 @@ margin-top: 20px;
   text-align: center;
 }
 
-/* 実績ここまで */
 
 
 
@@ -309,7 +307,7 @@ padding-left: 100px;
 .site_wrap-item-text .site_wrap-item-text_item2 {
 padding-left: 30px;
 }
-/*  架空サイト */
+
 
 .ficsite_wrap-item {
   display: flex;
@@ -354,7 +352,6 @@ margin-bottom: 10px;
 .ficsite_wrap .item2 {
   margin-top: 50px;
 }
-/* kokomade */
 
 .content{
 	margin: 0 auto;
