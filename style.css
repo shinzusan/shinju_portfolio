@@ -128,13 +128,13 @@ margin: 0 auto;
 
 .strength_wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
   grid-auto-rows: 1fr;
 }
 
 .strength_item {
   text-align: center;
-  margin: 0 30px;
+  margin: 30px;
 }
 
 .strength_item h3 {
@@ -143,6 +143,10 @@ margin: 0 auto;
 
 .strength_item-line1 h3 {
   margin-top: 10px;
+}
+
+.strength_item .line4 {
+ margin-top: 10px;
 }
 
 .strength_wrap .line1 {
