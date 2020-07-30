@@ -14,6 +14,14 @@
   .about__body{
     margin: 0 auto;
   }
+  .perform_wrap-item-text {
+    width: 70%;
+    text-align: center;
+  }
+
+  .ficsite_wrap-item-text {
+    width: 60%;
+  }
   .ficsite_wrap-item-textbtn ul {
    flex-direction: column;
    width: 180px;
@@ -39,13 +47,13 @@
   }
 
   .aside_list {
-    font-size: 20px;
-    margin: 20px;
-    padding: 0;
+    font-size: 18px;
+    margin: 5px;
+    padding-left:30px;
   }
 
   .aside_list li {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   /* hannba-ga- */
@@ -114,6 +122,11 @@ input[type="checkbox"]:checked ~ .back {
    .about_wrap {
      margin: 0 auto;
    }
+
+   .modal__content_img {
+     width: 300px;
+     margin: 0 auto;
+   }
   
    #modal01 .modal__content {
      display: block;
@@ -124,23 +137,31 @@ input[type="checkbox"]:checked ~ .back {
     display: block;
     padding: 20px;
    }
+   #modal03 .modal__content {
+    display: block;
+    padding: 20px;
+   }
+   #modal04 .modal__content {
+    display: block;
+    padding: 20px;
+   }
 
-
-.modal__content img {
-    width: auto;
+ .modal__content_about {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .modal__content_about li {
-    font-size: 10px;
+    font-size: 80%;
     padding-bottom: 8px;
     list-style: square;
   }
   .modal__content_text {
-    font-size: 13px;
+    font-size: 80%;
     margin-bottom: 8px;
   }
   .modal__content_text2 {
-    font-size: 13px;
+    font-size: 80%;
     margin-bottom: 10px;
   }
 
@@ -184,6 +205,11 @@ input[type="checkbox"]:checked ~ .back {
       display: none;
     }
 
+    .modal__content_about {
+       width: auto;
+     }
+   
+
 
     .site_wrap {
       grid-template-columns: 1fr;
@@ -200,7 +226,7 @@ input[type="checkbox"]:checked ~ .back {
   
     }
     .perform_wrap-item img {
-      width: 80%;
+      width: 300px;
       padding: 0;
       margin: 0 auto;
     }
@@ -223,7 +249,13 @@ input[type="checkbox"]:checked ~ .back {
     padding-right: 10px;
   }
   .ficsite_wrap-item img {
-    width: 80%;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .ficsite_wrap-item-text {
+    padding: 20px;
   }
 
     .repro_wrap {
